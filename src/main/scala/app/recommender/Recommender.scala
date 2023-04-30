@@ -27,17 +27,14 @@ class Recommender(sc: SparkContext,
   def recommendBaseline(userId: Int, genre: List[String], K: Int): List[(Int, Double)] = {
 
     val genre_rdd = sc.parallelize(List(genre))
-    val get_movies_1 = nn_lookup.lookup(genre_rdd).flatMap{case(_, movie_list) =>movie_list}
-      .map{case(movie_id, _, _) => movie_id}.collect().toList
-    //val get_movies_2 = get_movies_1.map{case(movie_id) =>
-    //  val prediction = 1.0//baselinePredictor.predict(user_id_temp, movie_id_temp)
-    //  (movie_id, prediction)
-    //}
-    val get_movie_2 = get_movies_1.map(x=> (x, baselinePredictor.predict(userId, x)))
-    val get_movies = get_movie_2.sortBy(_._2).reverse.take(K)
-    //val get_movies = get_movies_2.sortBy(_._2, ascending = false).take(K).toList
-    //val get_movies = get_movies_1
-    get_movies
+    val get_movies_id = nn_lookup.lookup(genre_rdd).mapPartitions(iter => {
+      val movie_id = iter.flatMap { case (_, tuples) => tuples.map(_._1) }
+      movie_id.toIterator
+    }, preservesPartitioning = true).collect().toList
+    val get_predicts = get_movies_id.map(movie_id=>(movie_id, baselinePredictor.predict(userId, movie_id)))
+    val get_K = get_predicts.sortBy(_._2).reverse.take(K)
+
+    get_K
   }
 
   /**
@@ -47,14 +44,10 @@ class Recommender(sc: SparkContext,
     val genre_rdd = sc.parallelize(List(genre))
     val get_movies_1 = nn_lookup.lookup(genre_rdd).flatMap { case (_, movie_list) => movie_list }
       .map { case (movie_id, _, _) => movie_id }.collect().toList
-    //val get_movies_2 = get_movies_1.map{case(movie_id) =>
-    //  val prediction = 1.0//baselinePredictor.predict(user_id_temp, movie_id_temp)
-    //  (movie_id, prediction)
-    //}
+
     val get_movie_2 = get_movies_1.map(x => (x, collaborativePredictor.predict(userId, x)))
     val get_movies = get_movie_2.sortBy(_._2).reverse.take(K)
-    //val get_movies = get_movies_2.sortBy(_._2, ascending = false).take(K).toList
-    //val get_movies = get_movies_1
+
     get_movies
   }
 }
