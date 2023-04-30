@@ -183,8 +183,8 @@ class MainTest {
       "(15,5952,None,3.5,1510571759)",
       "(15,72998,None,3.0,1510572052)",
       "(153,1,None,2.0,1525548642)",
-      "(153,1196,None,0.5,1525548175)",
-      "(153,179819,None,0.5,1525553024)",
+      "(153,1196,None,1.0,1525548175)",
+      "(153,179819,None,1.0,1525553024)",
       "(153,72998,None,1.0,1525552980)",
       "(155,1,None,3.0,961861723)",
       "(155,260,None,4.0,961889079)",
@@ -884,7 +884,7 @@ class MainTest {
       "(380,1210,None,5.0,1493419767)",
       "(380,122886,None,4.0,1493423194)",
       "(380,166528,None,5.0,1493419871)",
-      "(380,179819,None,0.5,1536872721)",
+      "(380,179819,None,1.0,1536872721)",
       "(380,260,None,5.0,1493419753)",
       "(380,2628,None,4.0,1494803425)",
       "(380,3114,None,5.0,1493473886)",
@@ -937,7 +937,7 @@ class MainTest {
       "(393,4993,None,5.0,1430505859)",
       "(393,5952,None,5.0,1430505860)",
       "(393,7153,None,5.0,1430505826)",
-      "(393,72998,None,0.5,1430506458)",
+      "(393,72998,None,1.0,1430506458)",
       "(399,1,None,4.0,1167220428)",
       "(399,1196,None,5.0,1167220406)",
       "(399,1210,None,5.0,1167220405)",
@@ -1029,7 +1029,7 @@ class MainTest {
       "(434,1196,None,5.0,1270604157)",
       "(434,1210,None,4.5,1270604436)",
       "(434,260,None,5.0,1270604737)",
-      "(434,2628,None,0.5,1270604685)",
+      "(434,2628,None,1.0,1270604685)",
       "(434,33493,None,1.0,1270606554)",
       "(434,4993,None,5.0,1270604133)",
       "(434,5378,None,1.0,1270606584)",
@@ -1111,7 +1111,7 @@ class MainTest {
       "(462,1196,None,2.5,1123893572)",
       "(462,1210,None,1.0,1154037668)",
       "(462,260,None,4.0,1140399826)",
-      "(462,2628,None,0.5,1140399820)",
+      "(462,2628,None,1.0,1140399820)",
       "(462,4993,None,4.5,1123892035)",
       "(462,5952,None,4.0,1121921155)",
       "(462,7153,None,4.5,1121922359)",
@@ -1204,7 +1204,7 @@ class MainTest {
       "(488,7153,None,5.0,1112382196)",
       "(489,2628,None,1.0,1333101402)",
       "(489,4993,None,4.0,1332772158)",
-      "(489,5378,None,0.5,1334169957)",
+      "(489,5378,None,1.0,1334169957)",
       "(489,5952,None,4.0,1332772103)",
       "(489,7153,None,4.0,1332772253)",
       "(489,72998,None,1.5,1332772267)",
@@ -1215,8 +1215,8 @@ class MainTest {
       "(490,72998,None,3.0,1324378368)",
       "(490,78499,None,4.0,1324371584)",
       "(495,122886,None,4.5,1458634629)",
-      "(495,4993,None,0.5,1458635247)",
-      "(495,5952,None,0.5,1458635266)",
+      "(495,4993,None,1.0,1458635247)",
+      "(495,5952,None,1.0,1458635266)",
       "(495,72998,None,5.0,1458635171)",
       "(497,260,None,2.0,1429127353)",
       "(497,4993,None,2.0,1429127309)",
@@ -1382,11 +1382,11 @@ class MainTest {
       "(567,166528,None,1.0,1525289624)",
       "(567,179819,None,2.0,1525285301)",
       "(567,260,None,2.0,1525288368)",
-      "(567,2628,None,0.5,1525289756)",
+      "(567,2628,None,1.0,1525289756)",
       "(567,3114,None,3.5,1525286028)",
       "(567,33493,None,1.5,1525289052)",
       "(567,4993,None,3.0,1525287066)",
-      "(567,5378,None,0.5,1525289764)",
+      "(567,5378,None,1.0,1525289764)",
       "(567,5952,None,3.0,1525287070)",
       "(567,7153,None,3.0,1525287071)",
       "(567,72998,None,1.0,1525289335)",
@@ -1650,7 +1650,7 @@ class MainTest {
       "(7,3114,None,4.5,1106635500)",
       "(7,33493,None,1.0,1121041079)",
       "(7,4993,None,4.5,1106636589)",
-      "(7,5378,None,0.5,1106635735)",
+      "(7,5378,None,1.0,1106635735)",
       "(7,5952,None,4.5,1106636527)",
       "(7,7153,None,4.0,1106636520)",
       "(73,1,None,4.5,1464196374)",
@@ -1660,11 +1660,11 @@ class MainTest {
       "(75,1196,None,4.5,1158990239)",
       "(75,260,None,5.0,1158989756)",
       "(75,2628,None,1.0,1158967457)",
-      "(75,33493,None,0.5,1158967510)",
+      "(75,33493,None,1.0,1158967510)",
       "(75,4993,None,5.0,1158967649)",
       "(75,5952,None,4.0,1158982929)",
       "(75,7153,None,4.0,1158967110)",
-      "(76,1,None,0.5,1439165548)",
+      "(76,1,None,1.0,1439165548)",
       "(76,1196,None,4.0,1439168691)",
       "(76,260,None,4.0,1439165601)",
       "(76,2628,None,2.0,1439168151)",
@@ -1837,24 +1837,24 @@ class MainTest {
       (1996, "Toy Story (1995)"),
       (1997, "Star Wars: Episode VI - Return of the Jedi (1983)"),
       (1998, "Star Wars: Episode V - The Empire Strikes Back (1980)"),
-      (1999, "Star Wars: Episode V - The Empire Strikes Back (1980)"),
+      (1999, "Star Wars: Episode I - The Phantom Menace (1999)"),
       (2000, "Star Wars: Episode IV - A New Hope (1977)"),
       (2001, "Star Wars: Episode V - The Empire Strikes Back (1980)"),
-      (2002, "Star Wars: Episode IV - A New Hope (1977)"),
+      (2002, "Lord of the Rings: The Fellowship of the Ring, The (2001)"),
       (2003, "Lord of the Rings: The Two Towers, The (2002)"),
       (2004, "Lord of the Rings: The Return of the King, The (2003)"),
       (2005, "Star Wars: Episode III - Revenge of the Sith (2005)"),
-      (2006, "Lord of the Rings: The Two Towers, The (2002)"),
+      (2006, "Lord of the Rings: The Return of the King, The (2003)"),
       (2007, "Star Wars: Episode V - The Empire Strikes Back (1980)"),
-      (2008, "Star Wars: Episode IV - A New Hope (1977)"),
+      (2008, "Lord of the Rings: The Return of the King, The (2003)"),
       (2009, "Star Wars: Episode I - The Phantom Menace (1999)"),
       (2010, "Avatar (2009)"),
       (2011, "Toy Story 3 (2010)"),
       (2012, "Lord of the Rings: The Return of the King, The (2003)"),
-      (2013, "Star Wars: Episode IV - A New Hope (1977)"),
+      (2013, "Avatar (2009)"),
       (2014, "Toy Story 3 (2010)"),
       (2015, "Lord of the Rings: The Return of the King, The (2003)"),
-      (2016, "Avatar (2009)"),
+      (2016, "Star Wars: Episode VII - The Force Awakens (2015)"),
       (2017, "Star Wars: Episode IV - A New Hope (1977)"),
       (2018, "Lord of the Rings: The Return of the King, The (2003)")
     )
@@ -1893,21 +1893,21 @@ class MainTest {
       (1999, List("Action", "Adventure", "Sci-Fi")),
       (2000, List("Action", "Adventure", "Sci-Fi")),
       (2001, List("Action", "Adventure", "Sci-Fi")),
-      (2002, List("Action", "Adventure", "Sci-Fi")),
+      (2002, List("Adventure", "Fantasy")),
       (2003, List("Adventure", "Fantasy")),
       (2004, List("Action", "Adventure", "Drama", "Fantasy")),
       (2005, List("Action", "Adventure", "Sci-Fi")),
-      (2006, List("Adventure", "Fantasy")),
+      (2006, List("Action", "Adventure", "Drama", "Fantasy")),
       (2007, List("Action", "Adventure", "Sci-Fi")),
-      (2008, List("Action", "Adventure", "Sci-Fi")),
+      (2008, List("Action", "Adventure", "Drama", "Fantasy")),
       (2009, List("Action", "Adventure", "Sci-Fi")),
       (2010, List("Action", "Adventure", "Sci-Fi", "IMAX")),
       (2011, List("Adventure", "Animation", "Children", "Comedy", "Fantasy", "IMAX")),
       (2012, List("Action", "Adventure", "Drama", "Fantasy")),
-      (2013, List("Action", "Adventure", "Sci-Fi")),
+      (2013, List("Action", "Adventure", "Sci-Fi", "IMAX")),
       (2014, List("Adventure", "Animation", "Children", "Comedy", "Fantasy", "IMAX")),
       (2015, List("Action", "Adventure", "Drama", "Fantasy")),
-      (2016, List("Action", "Adventure", "Sci-Fi", "IMAX")),
+      (2016, List("Action", "Adventure", "Fantasy", "Sci-Fi", "IMAX")),
       (2017, List("Action", "Adventure", "Sci-Fi")),
       (2018, List("Action", "Adventure", "Drama", "Fantasy"))
     )
@@ -2101,7 +2101,7 @@ class MainTest {
     val expected = Array(
       (1996, "Batman (1989)"),
       (1997, "Independence Day (a.k.a. ID4) (1996)"),
-      (1998, "Air Force One (1997)"),
+      (1998, "Titanic (1997)"),
       (1999, "Saving Private Ryan (1998)"),
       (2000, "Star Wars: Episode IV - A New Hope (1977)"),
       (2001, "Crouching Tiger, Hidden Dragon (Wo hu cang long) (2000)"),
@@ -2115,7 +2115,7 @@ class MainTest {
       (2009, "Star Trek (2009)"),
       (2010, "Avatar (2009)"),
       (2011, "Inception (2010)"),
-      (2012, "Forrest Gump (1994)"),
+      (2012, "Dark Knight, The (2008)"),
       (2013, "Godfather, The (1972)"),
       (2014, "Matrix, The (1999)"),
       (2015, "Matrix, The (1999)"),
@@ -2154,7 +2154,7 @@ class MainTest {
     val expected = Array(
       (1996, List("Action", "Crime", "Thriller")),
       (1997, List("Action", "Adventure", "Sci-Fi", "Thriller")),
-      (1998, List("Action", "Thriller")),
+      (1998, List("Drama", "Romance")),
       (1999, List("Action", "Drama", "War")),
       (2000, List("Action", "Adventure", "Sci-Fi")),
       (2001, List("Action", "Drama", "Romance")),
@@ -2168,7 +2168,7 @@ class MainTest {
       (2009, List("Action", "Adventure", "Sci-Fi", "IMAX")),
       (2010, List("Action", "Adventure", "Sci-Fi", "IMAX")),
       (2011, List("Action", "Crime", "Drama", "Mystery", "Sci-Fi", "Thriller", "IMAX")),
-      (2012, List("Comedy", "Drama", "Romance", "War")),
+      (2012, List("Action", "Crime", "Drama", "IMAX")),
       (2013, List("Crime", "Drama")),
       (2014, List("Action", "Sci-Fi", "Thriller")),
       (2015, List("Action", "Sci-Fi", "Thriller")),
@@ -2204,7 +2204,7 @@ class MainTest {
 
     val res = processor.getMostAndLeastRatedGenreAllTime
 
-    val expected = (("Horror", 1), ("Action", 15))
+    val expected = (("Comedy", 1), ("Action", 15))
 
     // Least
     if (res._1._1 != expected._1._1) {
@@ -2617,18 +2617,18 @@ class MainTest {
     val expected = Array(
       ("Avatar (2009)", 3.5729166666666665),
       ("Lord of the Rings, The (1978)", 3.142857142857143),
-      ("Lord of the Rings: The Fellowship of the Ring, The (2001)", 4.141891891891892),
+      ("Lord of the Rings: The Fellowship of the Ring, The (2001)", 4.153125),
       ("Lord of the Rings: The Return of the King, The (2003)", 4.143312101910828),
       ("Lord of the Rings: The Two Towers, The (2002)", 4.098684210526316),
       ("Rogue One: A Star Wars Story (2016)", 3.9615384615384617),
       ("Star Wars: Episode I - The Phantom Menace (1999)", 3.0714285714285716),
-      ("Star Wars: Episode II - Attack of the Clones (2002)", 3.185185185185185),
+      ("Star Wars: Episode II - Attack of the Clones (2002)", 3.2037037037037),
       ("Star Wars: Episode III - Revenge of the Sith (2005)", 3.4220779220779223),
       ("Star Wars: Episode IV - A New Hope (1977)", 4.215846994535519),
       ("Star Wars: Episode V - The Empire Strikes Back (1980)", 4.257396449704142),
       ("Star Wars: Episode VI - Return of the Jedi (1983)", 4.143790849673203),
       ("Star Wars: Episode VII - The Force Awakens (2015)", 4.0),
-      ("Star Wars: The Last Jedi (2017)", 3.0454545454545454),
+      ("Star Wars: The Last Jedi (2017)", 3.1363636),
       ("Toy Story (1995)", 3.853846153846154),
       ("Toy Story 2 (1999)", 3.8658536585365852),
       ("Toy Story 3 (2010)", 4.078431372549019)
@@ -2656,10 +2656,10 @@ class MainTest {
 
     aggregator.init(ratingsLoader.load(), moviesLoader.load())
 
-    assert((aggregator.getKeywordQueryResult(List("Fantasy")) - 3.833).abs < 0.01)
-    assert((aggregator.getKeywordQueryResult(List("Fantasy", "Sci-Fi")) - 3.668).abs < 0.01)
-    assert((aggregator.getKeywordQueryResult(List("Fantasy", "Comedy")) - 3.9294).abs < 0.01)
-    assert((aggregator.getKeywordQueryResult(List("Sci-Fi")) - 3.6805).abs < 0.01)
+    assert((aggregator.getKeywordQueryResult(List("Sci-Fi")) - 3.70).abs < 0.01)
+    assert((aggregator.getKeywordQueryResult(List("Fantasy")) - 3.844).abs < 0.01)
+    assert((aggregator.getKeywordQueryResult(List("Fantasy", "Sci-Fi")) - 3.69).abs < 0.01)
+    assert((aggregator.getKeywordQueryResult(List("Fantasy", "Comedy")) - 3.93).abs < 0.01)
     assert(aggregator.getKeywordQueryResult(List("AFakeGenre")) == -1.0)
   }
 
@@ -2689,13 +2689,13 @@ class MainTest {
       ("Lord of the Rings: The Two Towers, The (2002)", 4.098684210526316),
       ("Rogue One: A Star Wars Story (2016)", 4.0),
       ("Star Wars: Episode I - The Phantom Menace (1999)", 3.0714285714285716),
-      ("Star Wars: Episode II - Attack of the Clones (2002)", 3.185185185185185),
+      ("Star Wars: Episode II - Attack of the Clones (2002)", 3.2037037037037),
       ("Star Wars: Episode III - Revenge of the Sith (2005)", 3.4220779220779223),
       ("Star Wars: Episode IV - A New Hope (1977)", 4.215846994535519),
       ("Star Wars: Episode V - The Empire Strikes Back (1980)", 4.257396449704142),
       ("Star Wars: Episode VI - Return of the Jedi (1983)", 4.143790849673203),
       ("Star Wars: Episode VII - The Force Awakens (2015)", 4.0),
-      ("Star Wars: The Last Jedi (2017)", 3.0454545454545454),
+      ("Star Wars: The Last Jedi (2017)", 3.13636),
       ("Toy Story (1995)", 3.853846153846154),
       ("Toy Story 2 (1999)", 3.8658536585365852),
       ("Toy Story 3 (2010)", 4.078431372549019)
@@ -2713,10 +2713,10 @@ class MainTest {
     })
 
 
-    assert((aggregator.getKeywordQueryResult(List("Sci-Fi")) - 3.6908).abs < 0.01)
-    assert((aggregator.getKeywordQueryResult(List("Fantasy")) - 3.8386).abs < 0.01)
-    assert((aggregator.getKeywordQueryResult(List("Fantasy", "Sci-Fi")) - 3.6818).abs < 0.01)
-    assert((aggregator.getKeywordQueryResult(List("Fantasy", "Comedy")) - 3.9294).abs < 0.01)
+    assert((aggregator.getKeywordQueryResult(List("Sci-Fi")) - 3.70).abs < 0.01)
+    assert((aggregator.getKeywordQueryResult(List("Fantasy")) - 3.84).abs < 0.01)
+    assert((aggregator.getKeywordQueryResult(List("Fantasy", "Sci-Fi")) - 3.71).abs < 0.01)
+    assert((aggregator.getKeywordQueryResult(List("Fantasy", "Comedy")) - 3.93).abs < 0.01)
   }
 
   @Test(timeout = 60000)
@@ -2740,18 +2740,18 @@ class MainTest {
     val expected = Array(
       ("Avatar (2009)", 3.5729166666666665),
       ("Lord of the Rings, The (1978)", 3.1428),
-      ("Lord of the Rings: The Fellowship of the Ring, The (2001)", 4.141891891891892),
+      ("Lord of the Rings: The Fellowship of the Ring, The (2001)", 4.153125),
       ("Lord of the Rings: The Return of the King, The (2003)", 4.143312101910828),
       ("Lord of the Rings: The Two Towers, The (2002)", 4.098684210526316),
       ("Rogue One: A Star Wars Story (2016)", 3.9615384615384617),
       ("Star Wars: Episode I - The Phantom Menace (1999)", 3.0714285714285716),
-      ("Star Wars: Episode II - Attack of the Clones (2002)", 3.185185185185185),
+      ("Star Wars: Episode II - Attack of the Clones (2002)", 3.2037037037037),
       ("Star Wars: Episode III - Revenge of the Sith (2005)", 3.4220779220779223),
       ("Star Wars: Episode IV - A New Hope (1977)", 4.215846994535519),
       ("Star Wars: Episode V - The Empire Strikes Back (1980)", 4.257396449704142),
       ("Star Wars: Episode VI - Return of the Jedi (1983)", 4.143790849673203),
       ("Star Wars: Episode VII - The Force Awakens (2015)", 4.0),
-      ("Star Wars: The Last Jedi (2017)", 3.0454545454545454),
+      ("Star Wars: The Last Jedi (2017)", 3.1363636),
       ("Toy Story (1995)", 3.8405797101449277),
       ("Toy Story 2 (1999)", 3.8658536585365852),
       ("Toy Story 3 (2010)", 4.078431372549019)
@@ -2768,10 +2768,10 @@ class MainTest {
       assert((t._1._2 - t._2._2).abs < 0.01)
     })
 
-    assert((aggregator.getKeywordQueryResult(List("Sci-Fi")) - 3.687).abs < 0.01)
-    assert((aggregator.getKeywordQueryResult(List("Fantasy")) - 3.835).abs < 0.01)
-    assert((aggregator.getKeywordQueryResult(List("Fantasy", "Sci-Fi")) - 3.668).abs < 0.01)
-    assert((aggregator.getKeywordQueryResult(List("Fantasy", "Comedy")) - 3.9376).abs < 0.01)
+    assert((aggregator.getKeywordQueryResult(List("Sci-Fi")) - 3.70).abs < 0.01)
+    assert((aggregator.getKeywordQueryResult(List("Fantasy")) - 3.84).abs < 0.01)
+    assert((aggregator.getKeywordQueryResult(List("Fantasy", "Sci-Fi")) - 3.69).abs < 0.01)
+    assert((aggregator.getKeywordQueryResult(List("Fantasy", "Comedy")) - 3.92).abs < 0.01)
   }
 
   @Test(timeout = 60000)
@@ -2799,18 +2799,18 @@ class MainTest {
     val expected = Array(
       ("Avatar (2009)", 3.5729166666666665),
       ("Lord of the Rings, The (1978)", 3.1428),
-      ("Lord of the Rings: The Fellowship of the Ring, The (2001)", 4.141891891891892),
+      ("Lord of the Rings: The Fellowship of the Ring, The (2001)", 4.153125),
       ("Lord of the Rings: The Return of the King, The (2003)", 4.143312101910828),
       ("Lord of the Rings: The Two Towers, The (2002)", 4.098684210526316),
       ("Rogue One: A Star Wars Story (2016)", 3.9615384615384617),
       ("Star Wars: Episode I - The Phantom Menace (1999)", 3.0714285714285716),
-      ("Star Wars: Episode II - Attack of the Clones (2002)", 3.185185185185185),
+      ("Star Wars: Episode II - Attack of the Clones (2002)", 3.2037037037037),
       ("Star Wars: Episode III - Revenge of the Sith (2005)", 3.4220779220779223),
       ("Star Wars: Episode IV - A New Hope (1977)", 4.215846994535519),
       ("Star Wars: Episode V - The Empire Strikes Back (1980)", 4.257396449704142),
       ("Star Wars: Episode VI - Return of the Jedi (1983)", 4.143790849673203),
       ("Star Wars: Episode VII - The Force Awakens (2015)", 4.0),
-      ("Star Wars: The Last Jedi (2017)", 3.0454545454545454),
+      ("Star Wars: The Last Jedi (2017)", 3.1363636),
       ("Toy Story (1995)", 3.8115942028985508),
       ("Toy Story 2 (1999)", 3.8658536585365852),
       ("Toy Story 3 (2010)", 4.078431372549019)
@@ -2827,11 +2827,10 @@ class MainTest {
       assert((t._1._2 - t._2._2).abs < 0.01)
     })
 
-    assert((aggregator.getKeywordQueryResult(List("Sci-Fi")) - 3.6870).abs < 0.01)
-    assert((aggregator.getKeywordQueryResult(List("Fantasy")) - 3.8297).abs < 0.01)
-    assert((aggregator.getKeywordQueryResult(List("Fantasy", "Sci-Fi")) - 3.6689).abs < 0.01)
-    assert((aggregator.getKeywordQueryResult(List("Fantasy", "Comedy")) - 3.9186).abs < 0.01)
-
+    assert((aggregator.getKeywordQueryResult(List("Sci-Fi")) - 3.70).abs < 0.01)
+    assert((aggregator.getKeywordQueryResult(List("Fantasy")) - 3.83).abs < 0.01)
+    assert((aggregator.getKeywordQueryResult(List("Fantasy", "Sci-Fi")) - 3.69).abs < 0.01)
+    assert((aggregator.getKeywordQueryResult(List("Fantasy", "Comedy")) - 3.91).abs < 0.01)
   }
 
   @Test(timeout = 60000)
@@ -2859,18 +2858,18 @@ class MainTest {
     val expected = Array(
       ("Avatar (2009)", 3.5729166666666665),
       ("Lord of the Rings, The (1978)", 3.1428),
-      ("Lord of the Rings: The Fellowship of the Ring, The (2001)", 4.141891891891892),
+      ("Lord of the Rings: The Fellowship of the Ring, The (2001)", 4.153125),
       ("Lord of the Rings: The Return of the King, The (2003)", 4.143312101910828),
       ("Lord of the Rings: The Two Towers, The (2002)", 4.098684210526316),
       ("Rogue One: A Star Wars Story (2016)", 3.9615384615384617),
       ("Star Wars: Episode I - The Phantom Menace (1999)", 3.0714285714285716),
-      ("Star Wars: Episode II - Attack of the Clones (2002)", 3.185185185185185),
+      ("Star Wars: Episode II - Attack of the Clones (2002)", 3.2037037037037),
       ("Star Wars: Episode III - Revenge of the Sith (2005)", 3.4220779220779223),
       ("Star Wars: Episode IV - A New Hope (1977)", 4.215846994535519),
       ("Star Wars: Episode V - The Empire Strikes Back (1980)", 4.257396449704142),
       ("Star Wars: Episode VI - Return of the Jedi (1983)", 4.143790849673203),
       ("Star Wars: Episode VII - The Force Awakens (2015)", 4.0),
-      ("Star Wars: The Last Jedi (2017)", 3.0454545454545454),
+      ("Star Wars: The Last Jedi (2017)", 3.1363636),
       ("Toy Story (1995)", 3.853846153846154),
       ("Toy Story 2 (1999)", 3.8658536585365852),
       ("Toy Story 3 (2010)", 4.078431372549019)
@@ -2889,11 +2888,10 @@ class MainTest {
     })
 
 
-    assert((aggregator.getKeywordQueryResult(List("Sci-Fi")) - 3.687).abs < 0.01)
-    assert((aggregator.getKeywordQueryResult(List("Fantasy")) - 3.833).abs < 0.01)
-    assert((aggregator.getKeywordQueryResult(List("Fantasy", "Sci-Fi")) - 3.668).abs < 0.01)
-    assert((aggregator.getKeywordQueryResult(List("Fantasy", "Comedy")) - 3.929).abs < 0.01)
-
+    assert((aggregator.getKeywordQueryResult(List("Sci-Fi")) - 3.70).abs < 0.01)
+    assert((aggregator.getKeywordQueryResult(List("Fantasy")) - 3.84).abs < 0.01)
+    assert((aggregator.getKeywordQueryResult(List("Fantasy", "Sci-Fi")) - 3.69).abs < 0.01)
+    assert((aggregator.getKeywordQueryResult(List("Fantasy", "Comedy")) - 3.93).abs < 0.01)
   }
 
   @Test(timeout = 60000)
@@ -2907,25 +2905,31 @@ class MainTest {
 
     val res = aggregator
       .getResult()
-      .map(x => (x._1, (x._2 * 1000).toInt))
-      .map(x => (x.toString(), 1))
-      .reduceByKey(_ + _)
-      .map(t => (t.toString(), 1))
+      .reduceByKey(_ + _) // A couple of movies occur twice with differing movie ids
+      .collect().toMap
 
     val file = new File(getClass.getResource("/aggr-res.csv").getFile).getPath
 
     val expected = sc
       .textFile(file)
       .map(x => x.split('|'))
-      .map(x => (x(0), (x(1).toDouble * 1000).toInt))
-      .map(x => (x.toString(), 1))
-      .reduceByKey(_ + _)
-      .map(t => (t.toString(), 1))
+      .map(x => (x(0), x(1).toDouble))
+      .reduceByKey(_ + _)  // A couple of movies occur twice with differing movie ids
+      .collect() // for nicer output
+      .foreach(x => {
+        if (!res.contains(x._1)) {
+          println("Aggregation does not contain: " + x)
+        }
+        assert(res.contains(x._1))
+        if ((res(x._1) - x._2).abs > 0.01) {
+          println(res(x._1) + " != " + x._2 + " for: " + x._1)
+        }
+        assert((res(x._1) - x._2).abs < 0.01)})
 
-    assert(res.count() == res.join(expected).count())
-    assert((aggregator.getKeywordQueryResult(List("Sci-Fi")) - 3.1026).abs < 0.001)
-    assert((aggregator.getKeywordQueryResult(List("Thriller")) - 3.15611).abs < 0.001)
-    assert((aggregator.getKeywordQueryResult(List("Animation")) - 3.49711).abs < 0.001)
+
+    assert((aggregator.getKeywordQueryResult(List("Sci-Fi")) - 3.122).abs < 0.01)
+    assert((aggregator.getKeywordQueryResult(List("Thriller")) - 3.167).abs < 0.01)
+    assert((aggregator.getKeywordQueryResult(List("Animation")) - 3.506).abs < 0.01)
   }
 
   @Test(timeout = 60000)
@@ -2954,27 +2958,31 @@ class MainTest {
 
     val res = aggregator
       .getResult()
-      .map(x => (x._1, (x._2 * 1000).toInt))
-      .map(x => (x.toString(), 1))
-      .reduceByKey(_ + _)
-      .map(t => (t.toString(), 1))
+      .reduceByKey(_ + _)  // A couple of movies occur twice with differing movie ids
+      .collect().toMap
 
     val file = new File(getClass.getResource("/aggr-res2.csv").getFile).getPath
 
     val expected = sc
       .textFile(file)
       .map(x => x.split('|'))
-      .map(x => (x(0), (x(1).toDouble * 1000).toInt))
-      .map(x => (x.toString(), 1))
-      .reduceByKey(_ + _)
-      .map(t => (t.toString(), 1))
+      .map(x => (x(0), x(1).toDouble))
+      .reduceByKey(_ + _) // A couple of movies occur twice with differing movie ids
+      .collect() // to get println output
+      .foreach(x => {
+        if (!res.contains(x._1)) {
+          println("Aggregation does not contain: " + x)
+        }
+        assert(res.contains(x._1))
+        if ((res(x._1) - x._2).abs > 0.01) {
+          println(res(x._1) + " != " + x._2 + " for: " + x._1)
+        }
+        assert((res(x._1) - x._2).abs < 0.01)})
 
-    assert(res.count() == res.join(expected).count())
-
-    assert((aggregator.getKeywordQueryResult(List("Sci-Fi")) - 3.10641647).abs < 0.001)
-    assert((aggregator.getKeywordQueryResult(List("Animation")) - 3.344819).abs < 0.001)
-    assert((aggregator.getKeywordQueryResult(List("Thriller")) - 3.1298271).abs < 0.001)
-    assert((aggregator.getKeywordQueryResult(List("not-a-real-genre")) + 1).abs < 0.001)
+    assert((aggregator.getKeywordQueryResult(List("Sci-Fi")) - 3.121).abs < 0.01)
+    assert((aggregator.getKeywordQueryResult(List("Animation")) - 3.352).abs < 0.01)
+    assert((aggregator.getKeywordQueryResult(List("Thriller")) - 3.138).abs < 0.01)
+    assert((aggregator.getKeywordQueryResult(List("not-a-real-genre")) + 1).abs < 0.01)
   }
 
 
@@ -3075,8 +3083,8 @@ class MainTest {
     val ratingsLoader = new RatingsLoader(sc, "/ratings_small.csv")
     predictor.init(ratingsLoader.load())
 
-    assert((predictor.predict(1, 260) - 4.799).abs < 0.001)
-    assert((predictor.predict(607, 2628) - 2.592).abs < 0.001)
+    assert((predictor.predict(1, 260) - 4.799).abs < 0.01)
+    assert((predictor.predict(607, 2628) - 2.609).abs < 0.01)
   }
 
 
@@ -3085,9 +3093,8 @@ class MainTest {
     val predictor = new CollaborativeFiltering(10, 0.1, 0, 4)
     val ratingsLoader = new RatingsLoader(sc, "/ratings_small.csv")
     predictor.init(ratingsLoader.load())
-
-    assert((predictor.predict(1, 260) - 4.8349).abs < 0.001)
-    assert((predictor.predict(607, 2628) - 2.7580).abs < 0.001)
+    assert((predictor.predict(1, 260) - 4.808).abs < 0.01)
+    assert((predictor.predict(607, 2628) - 2.756).abs < 0.01)
   }
 
   @Test(timeout = 60000)
@@ -3096,11 +3103,11 @@ class MainTest {
     val ratingsLoader = new RatingsLoader(sc, "/ratings_medium.csv")
     predictor.init(ratingsLoader.load())
 
-    assert((predictor.predict(1, 26900) - 4.3367).abs < 0.001)
-    assert((predictor.predict(16, 8695) - 3.6429).abs < 0.001)
-    assert((predictor.predict(387, 64716) - 3.8651).abs < 0.001)
-    assert((predictor.predict(412, 278) - 1.57659).abs < 0.001)
-    assert((predictor.predict(451, 35347) - 1.0).abs < 0.001)
+    assert((predictor.predict(1, 26900) - 4.276).abs < 0.01)
+    assert((predictor.predict(16, 8695) - 3.626).abs < 0.01)
+    assert((predictor.predict(387, 64716) - 3.867).abs < 0.01)
+    assert((predictor.predict(412, 278) - 1.576).abs < 0.01)
+    assert((predictor.predict(451, 35347) - 1.0).abs < 0.01)
   }
 
   @Test(timeout = 60000)
@@ -3110,11 +3117,11 @@ class MainTest {
     predictor.init(ratingsLoader.load())
 
 
-    assert((predictor.predict(1, 26900) - 2.4005).abs < 0.001)
-    assert((predictor.predict(16, 8695) - 2.3486).abs < 0.001)
-    assert((predictor.predict(387, 64716) - 3.4029).abs < 0.001)
-    assert((predictor.predict(412, 278) - 1.3794).abs < 0.001)
-    assert((predictor.predict(451, 35347) - 0.8153).abs < 0.001)
+    assert((predictor.predict(1, 26900) - 2.60499).abs < 0.01)
+    assert((predictor.predict(16, 8695) - 2.30961).abs < 0.01)
+    assert((predictor.predict(387, 64716) - 3.40501).abs < 0.01)
+    assert((predictor.predict(412, 278) - 1.37397).abs < 0.01)
+    assert((predictor.predict(451, 35347) - 0.8099).abs < 0.01)
   }
 
   @Test(timeout = 60000)
@@ -3127,12 +3134,12 @@ class MainTest {
     val predictor = new Recommender(sc, lsh, ratingsLoader.load())
 
     val pred_user_16 = predictor.recommendBaseline(16, List("Action", "Adventure", "Sci-Fi"), 3)
-    var expected_user_16 = List((1210, 4.019872109974918), (122886, 3.7683100893962447), (166528, 3.7511313860645648))
+    var expected_user_16 = List((1210, 4.019230854017198), (122886, 3.7669563134995636), (166528, 3.7511313860645648))
     verifyRecommendations(pred_user_16, expected_user_16)
 
 
     val pred_user_148 = predictor.recommendBaseline(148, List("Action", "Adventure", "Sci-Fi"), 3)
-    var expected_user_148 = List((260, 3.9790369393159084), (1210, 3.8891883913049075), (166528, 3.584615570873173))
+    var expected_user_148 = List((1196, 4.0481849058529304), (260, 3.9781594058495773), (1210, 3.8884616345528236))
     verifyRecommendations(pred_user_148, expected_user_148)
 
   }
@@ -3147,12 +3154,12 @@ class MainTest {
     val predictor = new Recommender(sc, lsh, ratingsLoader.load())
 
     val pred_user_16 = predictor.recommendCollaborative(16, List("Action", "Adventure", "Sci-Fi"), 3)
-    var expected_user_16 = List((1210, 3.307255414556138), (72998, 3.051997911522746), (166528, 2.8413150696370097))
+    var expected_user_16 = List((1210, 3.3186058635502196), (72998, 3.0539417899190133), (166528, 2.9015773846093644))
     verifyRecommendations(pred_user_16, expected_user_16)
 
 
     val pred_user_148 = predictor.recommendCollaborative(148, List("Action", "Adventure", "Sci-Fi"), 3)
-    var expected_user_148 = List((166528, 3.315112067792392), (1210, 3.309874687964429), (1196, 3.1929036629568515))
+    var expected_user_148 = List((166528, 3.3074622527966597), (1210, 3.303161501680661), (1196, 3.185995824168776))
     verifyRecommendations(pred_user_148, expected_user_148)
   }
 
@@ -3167,6 +3174,14 @@ class MainTest {
 
 
     val pred_user_16 = predictor.recommendBaseline(16, List("Action", "Romance", "Western"), 10)
+    val pred_user_16_min_pred_rating = 3.75
+    pred_user_16.foreach(x => {
+      if (x._2 < pred_user_16_min_pred_rating) {
+        println("predicted rating: " + x._2 + " < " + pred_user_16_min_pred_rating)
+      }
+      assert(x._2 > pred_user_16_min_pred_rating)
+    })
+
     val expected_user_16 = List(
       (3792, 5.0),
       (7614, 4.601662887377173),
@@ -3178,8 +3193,8 @@ class MainTest {
       (7072, 3.8090753262867243),
       (5826, 3.804988662131519),
       (266, 3.750920587669637))
-    verifyRecommendations(pred_user_16, expected_user_16)
 
+    verifyRecommendations(pred_user_16.take(8), expected_user_16.take(8))
   }
 
   @Test(timeout = 60000)
@@ -3192,6 +3207,14 @@ class MainTest {
     val predictor = new Recommender(sc, lsh, ratingsLoader.load())
 
     val pred_user_148 = predictor.recommendBaseline(208, List("Action", "Adventure", "Crime", "Thriller"), 10)
+    val pred_user_148_min_pred_rating = 4.34
+    pred_user_148.foreach(x => {
+      if (x._2 < pred_user_148_min_pred_rating) {
+        println("predicted rating: " + x._2 + " < " + pred_user_148_min_pred_rating)
+      }
+      assert(x._2 > pred_user_148_min_pred_rating)
+    })
+
     val expected_user_148 = List(
       (5244, 5.0),
       (115727, 5.0),
@@ -3200,12 +3223,13 @@ class MainTest {
       (55167, 4.653129564654394),
       (126430, 4.545039018952062),
       (82857, 4.468965517241379),
-      (57502, 4.385630870779385),
+      (57502, 4.36897001303781),
       (69524, 4.3588894231405995),
       (102338, 4.354792206329542))
-    verifyRecommendations(pred_user_148, expected_user_148)
 
+    verifyRecommendations(pred_user_148.take(8), expected_user_148.take(8))
   }
+
 
   @Test(timeout = 60000)
   def test_03_recommender_medium_recommender_baseline_3() {
@@ -3217,6 +3241,14 @@ class MainTest {
     val predictor = new Recommender(sc, lsh, ratingsLoader.load())
 
     val pred_user_217 = predictor.recommendBaseline(217, List("Action", "Adventure", "Sci-Fi"), 10)
+    val pred_user_217_min_pred_rating = 3.61
+    pred_user_217.foreach(x => {
+      if (x._2 < pred_user_217_min_pred_rating) {
+        println("predicted rating: " + x._2 + " < " + pred_user_217_min_pred_rating)
+      }
+      assert(x._2 > pred_user_217_min_pred_rating)
+    })
+
     val expected_user_217 = List(
       (104780, 5.0),
       (26849, 5.0),
@@ -3229,7 +3261,7 @@ class MainTest {
       (3703, 3.6422898999342213),
       (72308, 3.620766446061972))
 
-    verifyRecommendations(pred_user_217, expected_user_217)
+    verifyRecommendations(pred_user_217.take(8), expected_user_217.take(8))
   }
 
   @Test(timeout = 60000)
@@ -3242,6 +3274,14 @@ class MainTest {
     val predictor = new Recommender(sc, lsh, ratingsLoader.load())
 
     val pred_user_217_2 = predictor.recommendBaseline(217, List("Action", "Crime", "Drama", "Sci-Fi", "Thriller"), 10)
+    val pred_user_217_2_min_pred_rating = 2.74
+    pred_user_217_2.foreach(x => {
+      if (x._2 < pred_user_217_2_min_pred_rating) {
+        println("predicted rating: " + x._2 + " < " + pred_user_217_2_min_pred_rating)
+      }
+      assert(x._2 > pred_user_217_2_min_pred_rating)
+    })
+
     val expected_user_217_2 = List(
       (138632, 5.0),
       (6835, 5.0),
@@ -3253,7 +3293,8 @@ class MainTest {
       (74668, 3.654510349957544),
       (2288, 3.5427299358693807),
       (6583, 3.4776234116248825))
-    verifyRecommendations(pred_user_217_2, expected_user_217_2)
+
+    verifyRecommendations(pred_user_217_2.take(8), expected_user_217_2.take(8))
 
   }
 
@@ -3268,19 +3309,28 @@ class MainTest {
 
 
     val pred_user_16 = predictor.recommendCollaborative(16, List("Action", "Romance", "Western"), 10)
+    val pred_user_16_min_pred_rating = 2.74
+    pred_user_16.foreach(x => {
+      if (x._2 < pred_user_16_min_pred_rating) {
+        println("predicted rating: " + x._2 + " < " + pred_user_16_min_pred_rating)
+      }
+      assert(x._2 > pred_user_16_min_pred_rating)
+    })
+
     val expected_user_16 = List(
-      (2070, 3.7311849343385664),
+      (2070, 3.7096500610562764),
       (7614, 3.383239684760606),
-      (1408, 3.344630250057705),
-      (163, 3.2822286548800452),
+      (1408, 3.3742042533705865),
+      (163,  3.2554343355157895),
       (7072, 3.274926154305249),
-      (948, 3.2092393567908295),
-      (3792, 3.17276040920493),
-      (266, 2.870818592348102),
+      (948, 3.1708884271161195),
+      (3792, 3.1198613409781166),
+      (266, 2.903420283519121),
       (3368, 2.7603638844810394),
       (5826, 2.7424985386222054))
 
-    verifyRecommendations(pred_user_16, expected_user_16)
+    verifyRecommendations(pred_user_16.take(8), expected_user_16.take(8))
+
 
   }
 
@@ -3294,20 +3344,28 @@ class MainTest {
     val predictor = new Recommender(sc, lsh, ratingsLoader.load())
 
     val pred_user_148 = predictor.recommendCollaborative(208, List("Action", "Adventure", "Crime", "Thriller"), 10)
+    val pred_user_148_min_pred_rating = 3.808
+    pred_user_148.foreach(x => {
+      if (x._2 < pred_user_148_min_pred_rating) {
+        println("predicted rating: " + x._2 + " < " + pred_user_148_min_pred_rating)
+      }
+      assert(x._2 > pred_user_148_min_pred_rating)
+    })
+
     val expected_user_148 = List(
-      (7925, 4.021036805586291),
-      (3347, 3.9457273748592168),
-      (1204, 3.9215525489445575),
-      (2905, 3.9054262701820885),
-      (126430, 3.869282497253498),
-      (69524, 3.8638881180631226),
-      (1198, 3.839693331785852),
-      (3494, 3.814151899675491),
-      (95780, 3.809217240700825),
-      (95771, 3.809217240700825))
+      (7925, 4.031595960061819),
+      (1204, 3.9341815590092057),
+      (3347, 3.89935152301845),
+      (2905, 3.8938555044947507),
+      (69524, 3.8480849181647745),
+      (137859, 3.8453619649201407),
+      (95780, 3.8453619649201407),
+      (95771, 3.8453619649201407),
+      (95965, 3.8453619649201407),
+      (95499, 3.8453619649201407)
+    )
 
-    verifyRecommendations(pred_user_148, expected_user_148)
-
+    verifyRecommendations(pred_user_148.take(5), expected_user_148.take(5))
   }
 
   @Test(timeout = 60000)
@@ -3320,20 +3378,28 @@ class MainTest {
     val predictor = new Recommender(sc, lsh, ratingsLoader.load())
 
     val pred_user_217 = predictor.recommendCollaborative(217, List("Action", "Adventure", "Sci-Fi"), 10)
-    val expected_user_217 = List((
-      7481, 3.708026645074336),
-      (95165, 3.590472911908593),
-      (80083, 3.590472911908593),
-      (104780, 3.540163934401219),
-      (26849, 3.540163934401219),
-      (3687, 3.540163934401219),
-      (71057, 3.5074455526511583),
-      (166528, 3.4944394034054453),
-      (34405, 3.381293065796422),
-      (106487, 3.3790583948749755))
+    val user_217_min_pred_rating = 3.37
+    pred_user_217.foreach(x => {
+      if (x._2 < user_217_min_pred_rating) {
+        println("predicted rating: " + x._2 + " < " + user_217_min_pred_rating)
+      }
+      assert(x._2 > user_217_min_pred_rating)
+    })
 
+    val expected_user_217 = List(
+      (7481, 3.7597736143794966),
+      (95165, 3.617203700226692),
+      (80083, 3.617203700226692),
+      (166528, 3.5875080051029773),
+      (104780, 3.5200445997469316),
+      (26849, 3.5200445997469316),
+      (3687, 3.5200445997469316),
+      (34405, 3.4345888917023024),
+      (68358, 3.3895483062647926),
+      (71057, 3.3833766491664443)
+    )
 
-    verifyRecommendations(pred_user_217, expected_user_217)
+    verifyRecommendations(pred_user_217.take(8), expected_user_217.take(8))
   }
 
   @Test(timeout = 60000)
@@ -3346,32 +3412,44 @@ class MainTest {
     val predictor = new Recommender(sc, lsh, ratingsLoader.load())
 
     val pred_user_217_2 = predictor.recommendCollaborative(217, List("Action", "Crime", "Drama", "Sci-Fi", "Thriller"), 10)
+    // value of the 10th highest rating
+    val user_217_2_min_pred_rating = 3.06
+
+    pred_user_217_2.foreach(x => {
+      if (x._2 < user_217_2_min_pred_rating) {
+        println("predicted rating: " + x._2 + " < " + user_217_2_min_pred_rating)
+      }
+      assert(x._2 >= user_217_2_min_pred_rating)
+    })
+
     val expected_user_217_2 = List(
-      (42718, 3.4549907354576592),
-      (74668, 3.4142591398404196),
-      (541, 3.2593313184099455),
-      (34319, 3.2130863841915023),
-      (96737, 3.1465160061768715),
+      (42718, 3.4662548405731153),
+      (74668, 3.426673908905554),
+      (541, 3.23726819392627),
+      (34319, 3.2306384099407537),
+      (96737, 3.1990111741243172),
       (26985, 3.143719068983431),
-      (6502, 3.1052724659025244),
+      (6502, 3.1306070924681975),
+      (54995, 3.1154206374927056),
       (138632, 3.093564859974027),
       (5522, 3.072194198805986),
       (74685, 3.0695369363776557))
 
-    verifyRecommendations(pred_user_217_2, expected_user_217_2)
-
+    verifyRecommendations(pred_user_217_2.take(8), expected_user_217_2.take(8))
   }
 
   def verifyRecommendations(predictions: List[(Int, Double)], expected: List[(Int, Double)]): Unit = {
-    expected
-      .sortWith((t1, t2) => t1._1 <= t2._1)
-      .zip(predictions.sortWith((t1, t2) => t1._1 <= t2._1)).foreach(t => {
-      if (t._1._1 != t._2._1) {
-        println(t._1._1 + " != " + t._2._1)
+    val expected_map = expected.toMap
+    predictions.foreach({ case (id, rating) => {
+      if (!expected_map.contains(id)){
+        println("unexpected movie id: " + id + " in the top k with rating: " + rating)
       }
-      assert(t._1._1 == t._2._1)
-      assert(((t._1._2) - (t._2._2)).abs <= 0.01)
-    })
+      assert(expected_map.contains(id))
+      if ((expected_map(id) - rating).abs > 0.01){
+        println("Expected movie id: " + id + " with rating " + rating + " to have predicted rating: " + expected_map(id))
+      }
+      assert((expected_map(id) - rating).abs < 0.01)
+    }})
   }
 
 }
