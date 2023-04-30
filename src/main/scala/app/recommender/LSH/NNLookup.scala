@@ -13,8 +13,16 @@ class NNLookup(lshIndex: LSHIndex) extends Serializable {
    * Lookup operation for queries
    *
    * @param input The RDD of keyword lists
-   * @return The RDD of (keyword list, resut) pairs
+   * @return The RDD of (keyword list, result) pairs
    */
   def lookup(queries: RDD[List[String]])
-  : RDD[(List[String], List[(Int, String, List[String])])] = ???
+  : RDD[(List[String], List[(Int, String, List[String])])] = {
+    val buckets = lshIndex.getBuckets()
+    val hashed = lshIndex.hash(queries)
+    val result = lshIndex.lookup(hashed).map{
+      case(_, keyword_list, result_list)=>
+        (keyword_list, result_list)
+    }
+    result
+  }
 }
