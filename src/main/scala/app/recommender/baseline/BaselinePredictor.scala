@@ -48,9 +48,6 @@ class BaselinePredictor() extends Serializable {
 
   def predict(userId: Int, movieId: Int): Double = {
     var p: Double = 0.0
-    //val see_nonexist = state.filter{case (uid, mid, _, _, _) => uid == userId && mid == movieId}
-    //if(!see_exist.isEmpty()){ p = see_exist.map(_._3).take(1)(0)}
-
     val user_avg = user_avg_ratings.filter { case (id, _) => id == userId }.map(_._2).take(1).headOption match {
       case Some(avg) => avg
       case None => global_average
