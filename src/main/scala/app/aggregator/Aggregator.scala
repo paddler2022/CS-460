@@ -107,21 +107,27 @@ class Aggregator(sc: SparkContext) extends Serializable {
   def updateResult(delta_ : Array[(Int, Int, Option[Double], Double, Int)]): Unit = {
     val delta_by_movie_id = sc.parallelize(delta_).map { case (_, title_id, old_rating, rating, _) =>
       (title_id, (old_rating, rating))
-    }
+    }.aggregateByKey((0.0, 0))((acc, ratings) => {
+      val (oldRating, newRating) = ratings
+      val oldRatingValue = oldRating.getOrElse(0.0)
+      if (oldRatingValue == 0.0){
+        (acc._1 + newRating, acc._2 + 1)
+      }
+      else{
+        (acc._1 - oldRatingValue + newRating, acc._2)
+      }
+    }, (acc1, acc2) => (acc1._1 + acc2._1, acc1._2 + acc2._2))
     val temp = movie_name_ratings
     movie_name_ratings.unpersist()
-    val updated_rdd = temp.leftOuterJoin(delta_by_movie_id).mapValues {
-      case ((movie_name, avg_rating, counts, movie_genre), delta_opt) =>
-        val new_info = delta_opt match {
-          case Some((old_rating, rating)) =>
-            val new_counts = if (old_rating.isDefined) counts else counts + 1
-            val new_avg_rating = (avg_rating * counts - old_rating.getOrElse(0.0) + rating) / new_counts
-            (movie_name, new_avg_rating, new_counts, movie_genre)
-          case None => (movie_name, avg_rating, counts, movie_genre)
-        }
-        new_info
+    val join_rdd = temp.leftOuterJoin(delta_by_movie_id)
+    val updated_rdd = join_rdd.mapValues {
+      case ((movie_name, avg_rating, counts, movie_genre), Some((sum, cnt))) =>
+        val new_counts = counts + cnt
+        val new_avg = (avg_rating*counts + sum)/new_counts
+        (movie_name, new_avg, new_counts, movie_genre)
+      case ((movie_name, avg_rating, counts, movie_genre),None) =>
+        (movie_name, avg_rating, counts, movie_genre)
     }
     movie_name_ratings = updated_rdd.partitionBy(partitioner).persist(MEMORY_ONLY)
   }
-
 }
