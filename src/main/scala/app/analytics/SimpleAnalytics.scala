@@ -58,7 +58,7 @@ class SimpleAnalytics() extends Serializable {
 
     val result = topRatedMovies.join(titlesGroupedById.mapValues(movie_info => movie_info.head))
       .map({
-        case (_, (moive_year, (_, movie_name, _))) => (movie_year, movie_name)}) //Only keeps movies' year and name required
+        case (_, (movie_year, (_, movie_name, _))) => (movie_year, movie_name)}) //Only keeps movies' year and name required
     result
   }
 
