@@ -32,8 +32,8 @@ class Aggregator(sc: SparkContext) extends Serializable {
     val movies_id_name_ratings = ratings
       .map { case (_, title_id, _, rating, _) => (title_id, (rating, 1)) }
       .aggregateByKey((0.0, 0))(
-        (acc, value) => (acc._1 + value._1, acc._2 + value._2),
-        (acc1, acc2) => (acc1._1 + acc2._1, acc1._2 + acc2._2)
+        (total, current) => (total._1 + current._1, total._2 + current._2),
+        (total1, total2) => (total1._1 + total2._1, total1._2 + total2._2)
       )
       .mapValues { case (ratings_sum, counts) => (ratings_sum / counts.toDouble, counts)}
       .fullOuterJoin(title.groupBy(_._1))
@@ -105,28 +105,30 @@ class Aggregator(sc: SparkContext) extends Serializable {
 
 
   def updateResult(delta_ : Array[(Int, Int, Option[Double], Double, Int)]): Unit = {
+    //First we need to transform the input as RDD
     val delta_by_movie_id = sc.parallelize(delta_).map { case (_, title_id, old_rating, rating, _) =>
-      (title_id, (old_rating, rating))
-    }.aggregateByKey((0.0, 0))((acc, ratings) => {
-      val (oldRating, newRating) = ratings
-      val oldRatingValue = oldRating.getOrElse(0.0)
-      if (oldRatingValue == 0.0){
-        (acc._1 + newRating, acc._2 + 1)
+      (title_id, (old_rating, rating)) //Only contain what we need
+    }.aggregateByKey((0.0, 0))(
+      (total, current) => {
+      val (old_rating, new_rating) = current
+      val get_old = old_rating.getOrElse(0.0) //To see whether the tuple contains the old rating
+      if (get_old == 0.0){
+        (total._1 + new_rating, total._2 + 1)
       }
-      else{
-        (acc._1 - oldRatingValue + newRating, acc._2)
+      else
+      {
+        (total._1 - get_old + new_rating, total._2)
       }
-    }, (acc1, acc2) => (acc1._1 + acc2._1, acc1._2 + acc2._2))
-    val temp = movie_name_ratings
-    movie_name_ratings.unpersist()
-    val join_rdd = temp.leftOuterJoin(delta_by_movie_id)
-    val updated_rdd = join_rdd.mapValues {
-      case ((movie_name, avg_rating, counts, movie_genre), Some((sum, cnt))) =>
-        val new_counts = counts + cnt
-        val new_avg = (avg_rating*counts + sum)/new_counts
+    }, (total1, total2) => (total1._1 + total2._1, total1._2 + total2._2)) //The final result keeps the the total of ratings and the times movies got rated
+    val temp = movie_name_ratings  //get the movie_name_ratings
+    movie_name_ratings.unpersist() //unpersist movie_name_ratings
+    val updated_rdd = temp.leftOuterJoin(delta_by_movie_id).mapValues {
+      case ((movie_name, avg_rating, counts, movie_genre), Some((total, times))) =>
+        val new_counts = counts + times
+        val new_avg = (avg_rating * counts + total) / new_counts
         (movie_name, new_avg, new_counts, movie_genre)
-      case ((movie_name, avg_rating, counts, movie_genre),None) =>
-        (movie_name, avg_rating, counts, movie_genre)
+      case ((movie_name, avg_rating, counts, movie_genre), None ) =>
+        (movie_name, avg_rating, counts, movie_genre) //If the ratings are null, we do not update the RDD.
     }
     movie_name_ratings = updated_rdd.partitionBy(partitioner).persist(MEMORY_ONLY)
   }
